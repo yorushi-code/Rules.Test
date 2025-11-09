@@ -343,6 +343,9 @@ const Footer = () => (
       <p className="footer-text">
         TeeFusion — независимый проект, созданный для тех, кто ценит честную игру и комфортную атмосферу.
       </p>
+      <p className="footer-text">
+        © <strong>TeeFusion</strong> 2025. Все права защищены.
+      </p>
     </div>
   </footer>
 );
