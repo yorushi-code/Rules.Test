@@ -75,28 +75,23 @@ body {
 }
 
 .logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  width: 64px;
+  height: 32px;
+  background: linear-gradient(135deg,var(--accent),var(--accent-light));
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 20px #8b5cf666;
 }
 .logo-icon img {
-    /* 1. Уменьшаем размер изображения, чтобы оно было меньше родительского контейнера (40px) */
-    width: 60%; /* Например, 60% от 40px = 24px */
-    height: 60%; /* Всегда устанавливайте и высоту, и ширину */
-    
-    /* 2. Обеспечиваем, чтобы SVG-иконка была белой (если она изначально темная) */
-    /* Этот фильтр инвертирует цвета, делая темное светлым. */
+    width: 100%;
+    height: 100%;
     filter: invert(100%) brightness(150%);
-    
-    /* Дополнительно: уберите любые границы или margin, которые могут мешать */
     border: none;
     margin: 0;
+    border-radius: 10px;
 }
 
 /* Пример стилей для текста TEEFUSION */
