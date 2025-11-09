@@ -328,7 +328,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="footer-brand">
-        <div className="logo-icon">TF</div>
+        <div className="logo-icon">&lt;</div>
         <span>TEE<strong>FUSION</strong></span>
       </div>
       <div className="footer-links">
