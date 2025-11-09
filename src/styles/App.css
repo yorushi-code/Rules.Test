@@ -75,37 +75,15 @@ body {
 }
 
 .logo-icon {
-  width: 64px;
-  height: 32px;
-  background: linear-gradient(135deg,var(--accent),var(--accent-light));
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  box-shadow: 0 0 20px #8b5cf666;
-}
-.logo-icon img {
-    width: 100%;
-    height: 100%;
-    filter: invert(100%) brightness(150%);
-    border: none;
-    margin: 0;
-    border-radius: 10px;
-}
-
-/* Пример стилей для текста TEEFUSION */
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-left: 10px; /* Отступ от иконки */
-}
-
-/* Пример стилей для общего контейнера */
-.Logo {
-    display: flex;
-    align-items: center;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
 }
 
 .logo strong {
@@ -490,6 +468,74 @@ body {
 
 .faq-item p {
   color: var(--text-secondary);
+}
+
+/* Term Tooltip */
+.term-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.term {
+  color: var(--accent-light);
+  border-bottom: 1px dotted var(--accent-light);
+  cursor: help;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.term:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.term-icon {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.term:hover .term-icon {
+  opacity: 1;
+}
+
+.tooltip {
+  position: fixed;
+  background: rgba(26, 26, 46, 0.98);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  max-width: 320px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: rgba(26, 26, 46, 0.98);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 /* Footer */
