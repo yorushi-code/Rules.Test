@@ -48,6 +48,7 @@ const App = () => {
   );
 };
 
+// With logo.svg added
 const Header = () => (
   <header className="header">
     <div className="container">
