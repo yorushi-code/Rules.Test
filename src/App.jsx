@@ -52,7 +52,9 @@ const Header = () => (
   <header className="header">
     <div className="container">
       <div className="logo">
-        <div className="logo-icon">TF</div>
+        <div className="logo-icon">
+          <img src="/teefusion.svg" alt="Logo" />
+        </div>
         <span>TEE<strong>FUSION</strong></span>
       </div>
     </div>
@@ -328,7 +330,9 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="footer-brand">
-        <div className="logo-icon">&lt;</div>
+        <div className="logo-icon">
+          <img src="/teefusion.svg" alt="Logo" />
+        </div>
         <span>TEE<strong>FUSION</strong></span>
       </div>
       <div className="footer-links">
