@@ -1,0 +1,23 @@
+server:
+  port: 3000
+  
+security:
+  jwt_secret: "2cceba5643550379e2d075cfeae0af7e5718aaf57b4eb60e8dd8a49a7e880bec"
+  
+database:
+  supabase_url: "https://ixrvrsqvutfwpzbayuta.supabase.co"
+  supabase_key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml4cnZyc3F2dXRmd3B6YmF5dXRhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4Mjk3NzQsImV4cCI6MjA3ODQwNTc3NH0.KtTm_X4MfOYvozk78MchVgweXlr6yvUZBlRtAhvjQJ4"
+  
+cors:
+  allowed_origins:
+    - "http://localhost:5173"
+    - "http://localhost:3000"
+    - "https://yorushi.github.io"
+    - "http://127.0.0.1:5173"
+    - "https://myfrontend.loca.lt"
+
+  
+rate_limit:
+  window_minutes: 15
+  max_requests: 100
+  login_max_attempts: 5
